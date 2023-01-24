@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>College Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66746747ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Trat Technical College</h1>
+            <p>this is a paragraph of <br>Trat Technical College</p>
+            <a href="" class="hero-btn">Visit Us To know More!</a>
+        </div>
+
+    </section>
+
+    <section class="department">
+        <h1>Department We Offer</h1>
+        <p>Test ๆ นี้คือคอร์สเรียน</p>
+
+        <div class="row">
+            <div class="department-col">
+                <h3>Information Technology (IT)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec ac sapien vel neque viverra viverra. Aenean blandit varius nibh,
+                    ut imperdiet sem scelerisque ut. In suscipit eros eu ipsum egestas,
+                    posuere porta felis pellentesque. Fusce sit </p>
+            </div>
+            <div class="department-col">
+                <h3>Degree (IT)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec ac sapien vel neque viverra viverra. Aenean blandit varius nibh,
+                    ut imperdiet sem scelerisque ut. In suscipit eros eu ipsum egestas,
+                    posuere porta felis pellentesque. Fusce sit </p>
+            </div>
+            <div class="department-col">
+                <h3>Post Graduation (IT)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec ac sapien vel neque viverra viverra. Aenean blandit varius nibh,
+                    ut imperdiet sem scelerisque ut. In suscipit eros eu ipsum egestas,
+                    posuere porta felis pellentesque. Fusce sit </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec ac sapien vel neque viverra viverra. Aenean blandit varius nibh,
+            ut imperdiet sem scelerisque ut. In suscipit eros eu ipsum egestas,
+            posuere porta felis pellentesque. Fusce sit </p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="img/eduford_img/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img/eduford_img/newyork.png">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img/eduford_img/washington.png">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec ac sapien vel neque viverra viverra. Aenean blandit varius nibh,
+            ut imperdiet sem scelerisque ut. In suscipit eros eu ipsum egestas,
+            posuere porta felis pellentesque. Fusce sit </p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="img/eduford_img/library.png">
+                <h3>World Class library</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec ac sapien vel neque viverra viverra. Aenean blandit varius nibh,</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/eduford_img/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec ac sapien vel neque viverra viverra. Aenean blandit varius nibh,</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/eduford_img/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec ac sapien vel neque viverra viverra. Aenean blandit varius nibh,</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- testimonials -->
+
+    <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="img/eduford_img/user1.jpg">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec ac sapien vel neque viverra viverra. Aenean blandit varius nibh,</p>
+                    <h3>Phalakorn</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- JavaScript -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
