@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>College Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66746747ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+
+    </section>
+
+    <!-- content us -->
+
+    <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15595.918755553485!2d102.51340882363075!3d12.249653661317094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310443a441d67977%3A0x1f7e9bcbbb73787c!2z4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LiZ4Li04LiE4LiV4Lij4Liy4LiU!5e0!3m2!1sth!2sth!4v1674992602254!5m2!1sth!2sth"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>ที่อยู่</h5>
+                        <p>43 ถนน ท่าเรือจ้าง ตำบล วังกระแจะ อำเภอเมืองตราด<br>ตราด 23000</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>ติดต่อเรา</h5>
+                        <p>039 520 230</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid far fa-envelope"></i>
+                    <span>
+                        <h5>อีเมล</h5>
+                        <p>bigbosszaa086@gmail.com</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="ชื่อ - นามสกุล" required>
+                    <input type="text" name="email" placeholder="ที่อยู่อีเมล" required>
+                    <input type="text" name="subject" placeholder="หัวข้อเรื่อง" required>
+                    <textarea rows="8" name="message" placeholder="ข้อความ" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">ส่งข้อความ</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec ac sapien vel neque viverra viverra. <br>Aenean blandit varius nibh,</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-line"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> By Wutipong Vww</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
